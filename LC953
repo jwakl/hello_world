@@ -1,0 +1,20 @@
+Verifying An Alien Dictionary
+
+Solution :
+
+compare each pair of the words(in original order); if first word is larger than second word(based on alien alphabet dictionary), return False ; else return True
+
+(How to compare? for two words, compare each letter. if letter A <= letter B(again, in weird dictionary), pass; otherwise return False
+
+for same result(==), shorter word is less than longer word( 'App' <'Apple')
+
+Return true only if all passed. 
+
+
+解释（as short as possible)
+
+一排词，按顺序，两两比较。 如果词A在外星字典里排在词B前面，pass。否则return False
+
+return True只在全部pass才发生。 
+
+

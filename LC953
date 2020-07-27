@@ -18,3 +18,33 @@ Return true only if all passed.
 return True只在全部pass才发生。 
 
 
+class Solution:
+    def isAlienSorted(self, words: List[str], order: str) -> bool:
+        
+        
+        def compare(s1,s2):
+            length = min(len(s1),len(s2))
+            
+            for i in range(length):
+                if order.index(s1[i]) > order.index(s2[i]) :
+                    return False
+                elif order.index(s1[i]) == order.index(s2[i]):
+                    continue
+                else :
+                    return True
+                
+            
+            if len(s1) > len(s2) : return False
+            return True
+        
+                    
+    
+        
+        
+        for i in range(len(words) -1 ):
+            if compare(words[i],words[i+1]) == False :
+                return False
+        return True
+    
+
+

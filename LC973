@@ -1,0 +1,9 @@
+K Closet Points to Origin
+
+Solution:
+
+sort the list of points based on their sqrt value of (x^2+y^2), return the first K pairs
+
+
+one liner
+return sorted(points, key = lambda p: p[0]**2 + p[1] ** 2 )[:K]
